@@ -1,0 +1,33 @@
+<?php
+
+$portfolio = new CPT( array(
+    'post_type_name' => 'stage',
+    'singular'       => __('Stage', 'ta-portfolio'),
+    'plural'         => __('Stages', 'ta-portfolio'),
+    'slug'           => 'stage'
+),
+	array(
+    'supports'  => array( 'title', 'editor', 'thumbnail' ),
+    'menu_icon' => 'dashicons-portfolio'
+));
+
+$portfolio -> register_taxonomy( 
+	array(
+		'taxonomy_name' => 'stage_tags',
+		'singular'      => __('Stage Tag', 'ta-portfolio'),
+		'plural'        => __('Stages Tags', 'ta-portfolio'),
+		'slug'          => 'stage-tag'
+	),
+	array(
+		'taxonomy_name' => 'stage_departements',
+		'singular'      => __('Stage Departement', 'ta-portfolio'),
+		'plural'        => __('Stages Departements', 'ta-portfolio'),
+		'slug'          => 'stage-departement'
+	),
+	array(
+		'taxonomy_name' => 'stage_disciplines',
+		'singular'      => __('Stage Discipline', 'ta-portfolio'),
+		'plural'        => __('Stages Disciplines', 'ta-portfolio'),
+		'slug'          => 'stage-discipline'
+	)
+);

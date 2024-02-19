@@ -1,0 +1,19 @@
+<?php
+
+$portfolio = new CPT( array(
+    'post_type_name' => 'stage',
+    'singular'       => __('Stage', 'ta-portfolio'),
+    'plural'         => __('Stages', 'ta-portfolio'),
+    'slug'           => 'stage'
+),
+	array(
+    'supports'  => array( 'title', 'editor', 'thumbnail' ),
+    'menu_icon' => 'dashicons-portfolio'
+));
+
+$portfolio -> register_taxonomy( array(
+    'taxonomy_name' => 'stage_tags',
+    'singular'      => __('Stage Tag', 'ta-portfolio'),
+    'plural'        => __('Stages Tags', 'ta-portfolio'),
+    'slug'          => 'stage-tag'
+));
