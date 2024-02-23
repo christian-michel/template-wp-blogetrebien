@@ -2,4 +2,6 @@ Template Worpress développé pour le site [blogetrebien.fr](https://blogetrebie
 
 Ce template intègre les taxonomies et les custom posts types. 
 
-j'y ai aussi créé et ajouté un générateur de citations alléatoires.
+J'y ai aussi créé et ajouté un générateur de citations alléatoires.
+
+Tout est administrable depuis des menus, directement dans le back-office de WordPress. 
